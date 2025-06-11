@@ -35,10 +35,14 @@ contract Voting {
     }
 
     // 一个resetVotes函数，重置所有候选人的得票数
-
-    function resetVotes(address owner) public {
-        // 只有部署人才能 重置票数
+    modifier onlyOwner(address owner) {
         require(owner == msg.sender, "Ownable:caller is not the owner");
+        _;
+    }
+
+    function resetVotes(address owner) public onlyOwner(owner) {
+        // 只有部署人才能 重置票数
+        // require(owner == msg.sender, "Ownable:caller is not the owner");
         address[] memory addrArray = votesSet.values();
         // 遍历
         for (uint256 i = 0; i < addrArray.length; i++) {

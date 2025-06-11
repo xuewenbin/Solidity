@@ -66,13 +66,14 @@ interface IERC20V1 {
     ) external returns (bool);
 }
 
-contract Erc20T is IERC20V1 {
+contract Erc20Task2 is IERC20V1 {
     string public constant name = "ERC20TEST";
     string public constant symbol = "ECT";
     uint8 public constant decimals = 18;
     //totalSupply 代币发行总供应量
     uint256 public totalSupply;
     mapping(address => uint256) public balanceOf;
+    mapping(address => uint256) public approvedOfbalance;
     address public _owner;
 
     mapping(address => mapping(address => uint256)) public allowance;
@@ -109,6 +110,7 @@ contract Erc20T is IERC20V1 {
 
     function approve(address spender, uint amount) external returns (bool) {
         _approve(msg.sender, spender, amount);
+        approvedOfbalance[spender] += amount;
         return true;
     }
 

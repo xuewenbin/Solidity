@@ -866,46 +866,6 @@
         "SafeCast"
       ]
     },
-    "D:\\Solidity\\contracts\\Erc20T.sol": {
-      "lastModificationDate": 1749576706317,
-      "contentHash": "48a8922e6532b0e7368de40e2a762092",
-      "sourceName": "contracts/Erc20T.sol",
-      "solcConfig": {
-        "version": "0.8.28",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.28"
-      ],
-      "artifacts": [
-        "Dex",
-        "Erc20T",
-        "IERC20V1"
-      ]
-    },
     "D:\\Solidity\\node_modules\\hardhat\\console.sol": {
       "lastModificationDate": 1749537623359,
       "contentHash": "681c532e816169606d13a5fe8b475074",
@@ -943,8 +903,8 @@
       ]
     },
     "D:\\Solidity\\contracts\\task1.sol": {
-      "lastModificationDate": 1749576706317,
-      "contentHash": "b0c659d2022d10174aa615e365ecb61a",
+      "lastModificationDate": 1749612184222,
+      "contentHash": "624b29bcf16b5fe56e96c1d54fd66780",
       "sourceName": "contracts/task1.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -1540,6 +1500,85 @@
       ],
       "artifacts": [
         "Lock"
+      ]
+    },
+    "D:\\Solidity\\contracts\\Erc20Task2.sol": {
+      "lastModificationDate": 1749627154319,
+      "contentHash": "3e443e4b32f1e78486a47e6a54c8fe75",
+      "sourceName": "contracts/Erc20Task2.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "Dex",
+        "Erc20Task2",
+        "IERC20V1"
+      ]
+    },
+    "D:\\Solidity\\contracts\\Task1.sol": {
+      "lastModificationDate": 1749631061196,
+      "contentHash": "624b29bcf16b5fe56e96c1d54fd66780",
+      "sourceName": "contracts/Task1.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "Voting"
       ]
     }
   }
