@@ -902,45 +902,6 @@
         "console"
       ]
     },
-    "D:\\Solidity\\contracts\\task1.sol": {
-      "lastModificationDate": 1749612184222,
-      "contentHash": "624b29bcf16b5fe56e96c1d54fd66780",
-      "sourceName": "contracts/task1.sol",
-      "solcConfig": {
-        "version": "0.8.28",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.28"
-      ],
-      "artifacts": [
-        "Voting"
-      ]
-    },
     "D:\\Solidity\\node_modules\\@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol": {
       "lastModificationDate": 1749547966206,
       "contentHash": "9dea2f1d2615534fb7e64833ae92b7c3",
@@ -1542,10 +1503,10 @@
         "IERC20V1"
       ]
     },
-    "D:\\Solidity\\contracts\\Task1.sol": {
-      "lastModificationDate": 1749631061196,
+    "D:\\Solidity\\contracts\\VotingTask1.sol": {
+      "lastModificationDate": 1749631860524,
       "contentHash": "624b29bcf16b5fe56e96c1d54fd66780",
-      "sourceName": "contracts/Task1.sol",
+      "sourceName": "contracts/VotingTask1.sol",
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
