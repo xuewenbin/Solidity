@@ -64,6 +64,41 @@ interface IERC20V1 {
         address to,
         uint amount
     ) external returns (bool);
+
+    // ===========================================================================
+
+    // function totalSupply() external view returns (uint totalSupply); // 总发行量
+
+    // function balanceOf(address _owner) external view returns (uint balance);
+
+    // // 代币分发(注意, 这个只有合约的Creator 可以调用)
+    // function transfer(address _to, uint _value) returns (bool success);
+
+    // // 这里是拥有者和拥有者之间的代币转移
+    // function transferFrom(
+    //     address _from,
+    //     address _to,
+    //     uint _value
+    // ) returns (bool success);
+
+    // function approve(address _spender, uint _value) returns (bool success);
+    // allowance控制代币的交易，如可交易账号及资产, 控制Token的流通
+    // function allowance(
+    //     address _owner,
+    //     address _spender
+    // ) constant returns (uint remaining);
+
+    // event Transfer(address indexed _from, address indexed _to, uint _value);
+    // event Approval(
+    //     address indexed _owner,
+    //     address indexed _spender,
+    //     uint _value
+    // );
+
+    // Token信息
+    // string public constant name = "4FunCoin";
+    // string public constant symbol = "4FC";
+    // uint8 public constant decimals = 18; // token的精度, 大部分都是18
 }
 
 contract Erc20Task2 is IERC20V1 {
@@ -96,7 +131,7 @@ contract Erc20Task2 is IERC20V1 {
         balanceOf[to] = balanceOf[to] += amount;
     }
 
-    //燃烧自己的代币
+    //代币被消耗(这里就不是转移, 是token用了就没了)
     function burn(uint256 amount) public {
         address from = msg.sender;
         balanceOf[from] = balanceOf[from] -= amount;
@@ -140,7 +175,7 @@ contract Erc20Task2 is IERC20V1 {
 }
 
 //建议去中心化交易所
-contract Dex {
+contract Dex_f {
     address public erc20V1;
 
     constructor(address _erc20V1) {

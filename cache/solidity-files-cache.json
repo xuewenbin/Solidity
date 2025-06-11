@@ -1464,8 +1464,8 @@
       ]
     },
     "D:\\Solidity\\contracts\\Erc20Task2.sol": {
-      "lastModificationDate": 1749627154319,
-      "contentHash": "3e443e4b32f1e78486a47e6a54c8fe75",
+      "lastModificationDate": 1749641402346,
+      "contentHash": "bc00a93fc3f4ff19e34c4f5197818f0f",
       "sourceName": "contracts/Erc20Task2.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -1498,7 +1498,7 @@
         "^0.8.28"
       ],
       "artifacts": [
-        "Dex",
+        "Dex_f",
         "Erc20Task2",
         "IERC20V1"
       ]
