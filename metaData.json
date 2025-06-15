@@ -1,0 +1,11 @@
+{
+    "description": "iKun 牛批",
+    "image": "ipfs://bafkreifd6ojosuw44hzqdinjl2znsal5yfdilyq2aay32jdtwmfouw7sau",
+    "name": "iKunNFT",
+    "attributes": [
+        {
+            "trait_type": "Rarity",
+            "value": "Epic"
+        }
+    ]
+}
