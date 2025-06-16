@@ -15,6 +15,7 @@ contract BeggingContractTask2 is Ownable {
         require(msg.value > 0, "Donation amount must be positive");
         // msg.sender‌ 表示当前函数调用者的地址（可能是外部账户或合约账户）
         donations[msg.sender] += msg.value;
+        emit Donation(msg.sender, msg.value);
     }
 
     // 查询指定地址的捐赠总额
@@ -35,4 +36,6 @@ contract BeggingContractTask2 is Ownable {
     // fallback() external payable {
     //     donations[msg.sender] += msg.value;
     // }
+
+    event Donation(address indexed addr, uint256 val);
 }
